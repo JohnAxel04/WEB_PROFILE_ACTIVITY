@@ -1,0 +1,193 @@
+body{
+    margin: 50px 150px auto;
+    padding: 0;
+    background: radial-gradient( rgb(77, 76, 76), rgb(61, 61, 61) ,rgb(48, 48, 48));
+}
+#container{
+    width: calc(100%);
+    height: calc(85vh);
+    display: grid;
+    grid-template-rows: .45fr .35fr;
+    grid-template-columns: .35fr ;
+    grid-template-areas:
+     "box1 box2 box2 "
+     "box3 box2 box2 "
+     "box3 box4 box4";
+    gap: 3.5px;
+    
+}
+.box{
+    box-shadow: inset 0 0 5px 0.5px ;
+    background-color: rgb(97, 97, 97);
+}
+#box1{
+    grid-area: box1;
+    border-radius: 10px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#box1 img{
+    width: 55%;
+    border-radius: 50%;
+    border: inset grey 5px;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+#box1 h3{
+    font-size: 1.3em;
+}
+#box2{
+    grid-area: box2;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    
+}
+#box3{
+    grid-area: box3;
+    border-radius: 0px 0px 0px 10px;
+}
+#box4{
+    grid-area: box4;
+    height: 30fr;
+    border-radius: 0px 0px 10px 0px;
+}
+.cont{
+    width: 45%;
+    margin-left: 30px;
+    margin-top: -14px;
+      
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.contain{
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: beige;
+}
+.contain div{
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
+}
+.contain div span{
+    color: white;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 50%;
+    float: right;
+    margin-right: -20px;
+    margin-top: -6px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(151, 180, 93);
+}
+.html{
+    background-color: rgb(151, 180, 93);
+    animation: html 1s linear forwards;
+}
+.css{
+    background-color: rgb(151, 180, 93);
+    animation: css 1s linear forwards;
+    
+}
+.js{  
+    background-color: rgb(151, 180, 93);
+    animation: js 1s linear forwards;
+}
+.py{
+    background-color: rgb(151, 180, 93);
+    animation: py 1s linear forwards;
+}
+.cont2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pie{
+    width: 70%;
+    height: 30vh;
+    margin-top: 70px;
+    border-radius: 50%;
+    background-image: 
+        conic-gradient(
+            rgb(73, 73, 255) 43%,
+            rgb(32, 32, 255) 0 70%,
+            rgb(65, 58, 47) 0 90%,
+            yellow 0%) ;
+    
+    animation: pi 1.5s linear forwards;
+}
+
+/* @keyframes pi{
+    100%{
+        background-image: 
+        conic-gradient(from 180deg,
+            brown 40%,
+            white 0 65%,
+            green 0 85%,
+            blue 0) ;
+    }
+    75%{
+        background-image: 
+        conic-gradient(from 140deg,
+            brown 40%,
+            white 0 65%,
+            green 0 85%,
+            blue 0) ;
+    }
+    50%{
+        background-image: 
+        conic-gradient(from 100deg,
+            brown 40%,
+            white 0 65%,
+            green 0 85%,
+            blue 0) ;
+    }
+    25%{
+        background-image: 
+        conic-gradient(from 60deg,
+            brown 40%,
+            white 0 65%,
+            green 0 85%,
+            blue 0) ;
+    }
+    0%{
+        background-image: 
+        conic-gradient(from 30deg,
+            brown 40%,
+            white 0 65%,
+            green 0 85%,
+            blue 0) ;
+    }
+} */
+
+@keyframes html{
+    100%{
+        width: 45%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 35%;
+    }
+}
+@keyframes js{
+    100%{
+        width: 10%;
+    }
+}
+@keyframes py{
+    100%{
+        width: 25%;
+    }
+}
