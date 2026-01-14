@@ -5,16 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2c3e3595f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
+        <header class="header">
+            <a id="logo" href="#">aXle</a>
+            <nav class="navv">
+                <a href="#box1" class="nvb">Home</a>
+                <a href="#box3" class="nvb">About</a>
+                <a href="#box2" class="nvb">Skills</a>
+                <a href="#box4" class="nvb">Contact</a>
+                <a href="#" id="menu" onclick=sideBar()><i class="fa-solid fa-bars" style="color: #f5c77a;"></i></a>
+            </nav>
+        </header>
+        <header class="headers">
+            <nav class="nabb">
+                <a class="nvb" id="exit" onclick=exIt()>x</a>
+                <a href="#box1" class="nvb">Home</a>
+                <a href="#box3" class="nvb">About</a>
+                <a href="#box2" class="nvb">Skills</a>
+                <a href="#box4" class="nvb">Contact</a>
+            </nav>
+        </header>
         <div class="box" id="box1">
-            <img src="600231305_2538901103160133_7844036080992300550_n.jpg" alt="">
-            <h3>John Axel De Leon</h3>
+            <div class="imgg"><img src="/picture/123-removebg-preview-removebg-preview.png" alt=""></div>
+            
+            <div id="inner">
+                <h2 class="hello">Hello, I'm</h2>
+                <h1>John Axel De Leon</h1>
+                <h2 class="h22">Aspiring Web Developer</h2>
+                <p>I’m a student passionate about web development, currently learning HTML, CSS, and JavaScript. I improve my skills through hands-on projects and continuous practice.</p>
+                <div id="btnn">
+                    <div class="icon"><a href="https://github.com/JohnAxel04"><i class="fa-brands fa-github" ></i></a></div>
+                    <div class="icon"><a href="#"><i class="fa-solid fa-envelope" ></i></a></div>
+                    <div class="icon" id="fb"><a href="https://www.facebook.com/johnaxel.deleon"><i class="fa-brands fa-facebook-f" ></i></a></div>
+                    <div class="icon"><a href="#"><i class="fa-solid fa-phone" ></i></a></div>
+                </div>
+                <button id="mBtn" ><a href="#box4">Contact Me</a></button>
+            </div>
+            
+        </div>
+        <div class="box" id="box3">
+            <p>Hi, I’m <b> John Axel De Leon</b>, an IT student  <br>
+            I am currently studying at Dalubhasaan ng Lungsod ng Lucena,
+            with a strong interest in Web Development.</p>
+            <p>My goal is to become a <i>Full-Stack Developer</i>, continuously improving my skills through hands-on projects and practical experience.</p>
+            <img src="/picture/234 .png" alt="">
+            <button  class="skillBtn"><a href="#box2">My Skills</a></button>
         </div>
         <div class="box" id="box2">
             <div class="cont">
-                <h1>Stat Bar</h1>
+                <h1>Skill Proficiency</h1>
                 <!-- HTML -->
                 <h3 class="title">HTML</h3>
                 <div class="contain">
@@ -37,11 +82,60 @@
                 </div>
             </div>
             <div class="cont2">
+                <h1>Language Usage Frequency</h1>
                 <div class="pie"></div>
+                <figcaption class="legend">
+                    <span>Css 42%</span>
+                    <span>Python 33%</span>
+                    <span>Html 15%</span>
+                    <span>JavaScript 10%</span>
+                </figcaption>
             </div>
         </div>
-        <div class="box" id="box3">3</div>
-        <div class="box" id="box4">4</div>
+        
+        <div class="box" id="box4">
+        <div class="contact1">
+            <h1>Contact Me</h1>
+            <p><strong>Fb:</strong><a href=""> John Axel De Leon</a></p>
+            <p><strong>Email:</strong><a href=""> johnaxel62@gmail.com</a> </p>
+            <p><strong>Github:</strong><a href=""> JohnAxel04</a> </p>
+            <p><strong>Tel: </strong> 09618107599</p>
+            <ul class="conTact">
+                <li><a href="https://github.com/JohnAxel04"><i class="fa-brands fa-github" style="color: white;"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope" style="color: white;"></i></a></li>
+                <li><a href="https://www.facebook.com/johnaxel.deleon"><i class="fa-brands fa-facebook-f" style="color:white;"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-phone" style="color: white;"></i></a></li>
+            </ul>
+            <button class="iconn">Download CV</button>
+        </div>
+        <div class="contact2">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a07df742-788c-4ae3-9866-2fd72ae966f0">
+                <input type="text" id="name" name="name" placeholder=" Full Name: " required>
+                <input type="email" id="email" name="email" placeholder=" Email:" required>
+                <textarea name="Message" id="comment" rows="6" placeholder=" Message: " required></textarea>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+            
+        </div>
+        
     </div>
+    <footer>
+        <p>JohnAxel04 1/2026</p>
+    </footer>
+
+    <script>
+        function sideBar(){
+            const menu = document.querySelector('.headers .nabb')
+            menu.style.display = 'flex';
+        }
+        function exIt(){
+            const menu = document.querySelector('.headers .nabb')
+            menu.style.display = 'none';
+        }
+
+           
+    </script>
+</div>
 </body>
 </html>
